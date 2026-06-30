@@ -66,8 +66,6 @@ Each directory contains solutions and notes for specific lab topics:
 ```
 ├── lab-solutions/
 ├── vulnerability-notes/
-├── scripts/
-└── resources/
 ```
 
 ## Contributing
