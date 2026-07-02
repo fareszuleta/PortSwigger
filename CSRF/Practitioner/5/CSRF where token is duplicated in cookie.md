@@ -23,7 +23,7 @@ Login (wiener:peter) → Cambiar email → Interceptar petición
 
 ## 1. Análisis de la petición
 
-![Burp intercept wiener](imagen-1-token-duplicate.png)
+![Burp intercept wiener](Images/1.png)
 
 ### Petición de cambio de email
 
@@ -47,7 +47,7 @@ Tienen **exactamente el mismo valor**.
 
 ## 2. Token arbitrario — Doble submit válido
 
-![Arbitrary token test](imagen-2-token-arbitrary.png)
+![Arbitrary token test](Images/2.png)
 
 Se prueba con un token arbitrario diferente:
 
@@ -120,7 +120,7 @@ La cookie `csrf` personalizada se inyecta en el navegador de la víctima.
 
 ## 6. Lab resuelto
 
-![Congratulations lab solved](imagen-3-lab-solved.png)
+![Congratulations lab solved](Images/3.png)
 
 ---
 
