@@ -140,7 +140,7 @@ La cookie `csrf` personalizada se inyecta en el navegador de la víctima.
 | Lab 4 | Lab 5 |
 |-------|-------|
 | Token en parámetro + csrfKey en cookie (diferentes) | Token en parámetro = Token en cookie (iguales) |
-| Validar que coincidan entre sí | Validar que coincidan entre sí |
+| Validar que esten conectadas entre sí | Validar que coincidan entre sí |
 | Inyectar csrfKey | Inyectar csrf |
 | Ambas cosas diferentes | Una sola cosa (duplicada) |
 
