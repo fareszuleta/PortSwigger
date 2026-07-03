@@ -22,7 +22,7 @@ Login GET → Cookie enviada (Lax permite GET)
 
 ## 1. SameSite Lax explicado
 
-![Login GET request](imagen-1-login-get.png)
+![Login GET request](images/1.webp)
 
 ### Valores de SameSite
 
@@ -45,7 +45,7 @@ Lax protege POST pero permite GET.
 
 ## 2. Endpoint Change Email
 
-![My account change email](imagen-2-change-email.png)
+![My account change email](images/2.webp)
 
 ### Petición POST normal
 
@@ -64,7 +64,7 @@ Resultado: CSRF no funciona.
 
 ## 3. Method Override Discovery
 
-![POST request intercepted](imagen-3-post-request.png)
+![POST request intercepted](images/3.webp)
 
 ### Prueba 1: GET simple
 
@@ -125,7 +125,7 @@ Desventaja: Visible (redirección)
 
 ## 6. Payload — Opción 2: Form GET (oculto)
 
-![Email changed confirmation](imagen-4-email-changed.png)
+![Email changed confirmation](images/4.webp)
 
 ```html
 <iframe name="csrf-frame" style="display:none;"></iframe>
@@ -155,7 +155,7 @@ Desventaja: Requiere JavaScript
 
 ## 7. Lab resuelto
 
-![Congratulations lab solved](imagen-5-lab-solved.png)
+![Congratulations lab solved](images/5.webp)
 
 ---
 
