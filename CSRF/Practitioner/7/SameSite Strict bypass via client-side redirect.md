@@ -23,7 +23,7 @@ SameSite=Strict bloquea CSRF cross-site
 
 ## 1. Análisis inicial
 
-![POST change email request](imagen-1-post-change-email.png)
+![POST change email request](images/1.webp)
 
 ### Petición de cambio de email
 
@@ -46,7 +46,7 @@ SameSite=Strict bloquea cookie en peticiones desde otro dominio (incluso GET).
 
 ## 2. Búsqueda del redirect
 
-![Client-side redirect from blog](imagen-2-get-from-exploit.png)
+![Client-side redirect from blog](images/2.webp)
 
 Navegando la plataforma, encontramos un blog con comentarios.
 
@@ -60,7 +60,7 @@ Este endpoint redirige a `/post/{postId}` (client-side, desde el mismo dominio).
 
 ## 3. Sistema de comentarios
 
-![Blog comment form](imagen-3-blog-comments.png)
+![Blog comment form](images/3.webp)
 
 Formulario de comentarios con:
 - Comment text
@@ -92,7 +92,7 @@ La ruta `/post/../my-account` se normaliza a `/my-account`.
 
 ## 5. Inyección de change-email endpoint
 
-![GET request with email parameters](imagen-4-thank-you-comment.png)
+![GET request with email parameters](images/4.webp)
 
 Convertimos POST a GET:
 
@@ -155,7 +155,7 @@ Este lab usa:
 
 ## 8. Payload final
 
-![Email changed via GET with submit parameter](imagen-5-get-change-email.png)
+![Email changed via GET with submit parameter](images/5.webp)
 
 ```html
 <script>
@@ -176,7 +176,7 @@ Este lab usa:
 
 ## 9. Lab resuelto
 
-![Congratulations solved](imagen-6-lab-solved.png)
+![Congratulations solved](images/6.webp)
 
 ---
 
