@@ -24,7 +24,7 @@ WebSocket endpoint vulnerable → No CSRF token, SameSite=None
 
 ## 1. WebSocket History
 
-![WebSocket connection history in Burp](image-1-websocket-history.png)
+![WebSocket connection history in Burp](images/cswsh-1-websocket-history.png)
 
 Live chat at `/chat` endpoint. No CSRF token in handshake.
 
@@ -34,7 +34,8 @@ READY message shown (used to retrieve chat history).
 
 ## 2. Normal Message
 
-![WebSocket repeater with normal message](image-2-normal-message.png)
+![WebSocket repeater with normal message](images/cswsh-2-normal-message.png
+)
 
 Sending a regular chat message via WebSocket repeater.
 
@@ -42,7 +43,7 @@ Sending a regular chat message via WebSocket repeater.
 
 ## 3. READY Message Discovery
 
-![WebSocket repeater modified to READY](image-3-ready-message.png)
+![WebSocket repeater modified to READY](images/cswsh-3-ready-message.png)
 
 Change message to `READY` instead of JSON.
 
@@ -54,7 +55,7 @@ This is the key to exfiltration.
 
 ## 4. Chat History Retrieval
 
-![Server dumps all chat messages](image-4-chat-history.png)
+![Server dumps all chat messages](images/cswsh-4-chat-history.png)
 
 Sending READY returns:
 
@@ -70,7 +71,7 @@ Chat contains the victim's password!
 
 ## 5. Cross-Origin WebSocket Test
 
-![Edit WebSocket connection to change origin](image-5-websocket-edit.png)
+![Edit WebSocket connection to change origin](images/cswsh-5-websocket-edit.png)
 
 Edit WebSocket connection (pencil icon).
 
@@ -138,7 +139,7 @@ Password: z6609kwu42e7zznpnl3l
 
 ## 8. Login
 
-![Login form with extracted credentials](image-7-login-carlos.png)
+![Login form with extracted credentials](images/cswsh-7-login-carlos.png)
 
 Navigate to `/login`:
 
@@ -153,7 +154,7 @@ Account access gained.
 
 ## 9. Lab Solved
 
-![Congratulations lab solved](image-8-lab-solved.png)
+![Congratulations lab solved](images/cswsh-8-lab-solved.png)
 
 Lab completed successfully.
 
