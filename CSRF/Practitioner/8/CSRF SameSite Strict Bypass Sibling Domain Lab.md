@@ -25,7 +25,7 @@ SameSite=Strict blocks CSWSH
 
 ## 1. WebSocket Chat Discovery
 
-![WebSocket with READY message](images/-1-ready-message.png)
+![WebSocket with READY message](images/samesite-sibling-1-ready-message.png)
 
 READY message dumps all previous chat messages.
 
@@ -35,7 +35,7 @@ This is the key to exfiltration.
 
 ## 2. WebSocket Handshake
 
-![WebSocket GET request](images/-2-websocket-handshake.png)
+![WebSocket GET request](images/samesite-sibling-2-websocket-handshake.png)
 
 No CSRF token in handshake. Only session cookie.
 
@@ -45,7 +45,7 @@ Vulnerable to CSRF but SameSite=Strict blocks cross-site.
 
 ## 3. Cookie Protection
 
-![Cookie SameSite=Strict](images/-3-samesite-strict.png)
+![Cookie SameSite=Strict](images/samesite-sibling-3-samesite-strict.png)
 
 Session cookie: `SameSite=Strict`
 
@@ -57,7 +57,7 @@ Normal CSWSH won't work.
 
 ## 4. Sibling Domain Discovery
 
-![JavaScript request to CMS subdomain](images/-4-js-request.png)
+![JavaScript request to CMS subdomain](images/samesite-sibling-4-js-request.png)
 
 Found in HTTP history:
 
@@ -72,7 +72,7 @@ Host: cms-0a150001047596fb82fd74e200fb0084.web-security-academy.net
 
 ## 5. Accessing Sibling Domain
 
-![Login page on sibling domain](images/-5-login-page.png)
+![Login page on sibling domain](images/samesite-sibling-5-login-page.png)
 
 Navigate to sibling domain login page.
 
@@ -80,7 +80,7 @@ Navigate to sibling domain login page.
 
 ## 6. XSS Vulnerability
 
-![XSS test in username field](images/-6-xss-test.png)
+![XSS test in username field](images/samesite-sibling-6-xss-test.png)
 
 Input in username field:
 
@@ -92,7 +92,7 @@ Input in username field:
 
 ## 7. XSS Confirmed
 
-![Alert popup from XSS](images/-7-xss-alert.png)
+![Alert popup from XSS](images/samesite-sibling-7-xss-alert.png)
 
 XSS vulnerability confirmed on sibling domain.
 
@@ -125,7 +125,7 @@ Can execute arbitrary JavaScript.
 
 ## 9. Victim Access Log
 
-![Exploit server showing exfiltrated data](images/-8-access-log.png)
+![Exploit server showing exfiltrated data](images/samesite-sibling-8-access-log.png)
 
 Victim's browser fetches to attacker server with chat data:
 
@@ -156,7 +156,7 @@ Password: sjvat4qc93ybreajqtxu
 
 ## 11. Lab Solved
 
-![Congratulations lab solved](images/-9-lab-solved.png)
+![Congratulations lab solved](images/samesite-sibling-9-lab-solved.png)
 
 ---
 
