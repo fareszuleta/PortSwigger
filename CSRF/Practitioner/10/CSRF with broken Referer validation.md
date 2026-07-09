@@ -26,7 +26,7 @@ Login & analyze email change request
 
 ## 1. Normal Email Change Request
 
-![Exploit server craft response configuration](image/1783637723947_image.png)
+![Exploit server craft response configuration](Image/1783637723947_image.png)
 
 Legitimate request:
 
