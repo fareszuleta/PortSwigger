@@ -26,7 +26,7 @@ Login & analyze email change request
 
 ## 1. Request Headers Analysis
 
-![Change-email request with Referer header](image/image-1-request-headers.png)
+![Change-email request with Referer header](image/csrf-referer-1-request-headers.png)
 
 Normal email change request:
 
